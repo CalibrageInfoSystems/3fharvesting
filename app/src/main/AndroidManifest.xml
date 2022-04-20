@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.calibrage.a3fharvesting">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activities.SyncNewActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Activities.CloseLabourleaderRequestActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activities.SelectlanguageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.OTPActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.PdfActivity"
+            android:screenOrientation="portrait">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".Activities.MapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ViewDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.CloseLabourRequestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.SyncActivity"
+            android:screenOrientation="portrait">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".Activities.LanguageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
